@@ -44,11 +44,7 @@ main :: proc() {
 
     SetTargetFPS(60)
 
-    for !WindowShouldClose() {
-
-        UpdateDrawFrame()
-
-    }
+    for !WindowShouldClose() do UpdateDrawFrame()
 }
 
 // Initialize game variables
